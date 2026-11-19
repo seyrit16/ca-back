@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Auth</title>
+</head>
+<body>
+<h2>Вход</h2>
+<input id="login-username" placeholder="username"><br>
+<input id="login-password" placeholder="password" type="password"><br>
+<button onclick="login()">Войти</button>
+
+<h2>Регистрация</h2>
+<input id="reg-nickname" placeholder="nickname"><br>
+<input id="reg-username" placeholder="username"><br>
+<input id="reg-password" placeholder="password" type="password"><br>
+<input id="reg-email" placeholder="email"><br>
+<button onclick="register()">Зарегистрироваться</button>
+
+<script>
+    const API = "http://localhost:8080";
+
+    async function login() {
+        const res = await fetch(`${API}/api/auth/login`, {
+            method: "POST",
+            headers: {"Content-Type": "application/json"},
+            body: JSON.stringify({
+                username: document.getElementById("login-username").value,
+                password: document.getElementById("login-password").value
+            })
+        });
+        const data = await res.json();
+        if (data.access_token) {
+            await fetch(`http://localhost:7777/callback?access_token=${data.access_token}&refresh_token=${data.refresh_token}`);
+            document.body.innerHTML = "<h2>Вход выполнен, страницу можно закрыть.</h2>";
+        } else {
+            alert(JSON.stringify(data));
+        }
+    }
+
+    async function register() {
+        const res = await fetch(`${API}/api/auth/register`, {
+            method: "POST",
+            headers: {"Content-Type": "application/json"},
+            body: JSON.stringify({
+                nickname: document.getElementById("reg-nickname").value,
+                username: document.getElementById("reg-username").value,
+                password: document.getElementById("reg-password").value,
+                email: document.getElementById("reg-email").value
+            })
+        });
+        const data = await res.json();
+        alert(JSON.stringify(data));
+    }
+</script>
+</body>
+</html>
