@@ -1,0 +1,10 @@
+map:
+    noiseSeed (0, 10000)
+
+mountain:
+    seed (0, 10000)
+
+water:
+    seed (0, 10000)
+    baseNoiseScale (15,30)
+    craterDepth (15, 45)
