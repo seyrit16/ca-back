@@ -1,0 +1,206 @@
+{
+  "game": {
+    "id": "66381913-c151-4cf0-89db-05aef255b24e",
+    "status": "in_progress",
+    "ownerId": "player_0",
+    "winnerId": "",
+    "turnCount": 0,
+    "currentTurnUserId": "e89b8faa-4d02-44e3-a95a-5a2162923035",
+    "targetTerritory": 0,
+    "numberCharacters": 5,
+    "numberCubes": 5,
+    "currentDisaster": "",
+    "disasterStartedAt": null,
+    "disasterQuadrant": 0
+  },
+  "boardWidth": 0,
+  "boardHeight": 0,
+  "boardsFlat": [],
+  "units": [
+    {
+      "id": "unit_0_0",
+      "name": "Character 0",
+      "ownerId": "player_0",
+      "unitNumber": 0,
+      "characterTypeId": 0,
+      "positionX": 0,
+      "positionY": 0,
+      "hp": 100,
+      "maxHp": 100,
+      "attack": 10,
+      "defense": 5,
+      "capturePoints": 0,
+      "hasTeleport": false,
+      "hasCamp": false,
+      "isAlive": true
+    },
+    {
+      "id": "unit_0_1",
+      "name": "Character 1",
+      "ownerId": "player_0",
+      "unitNumber": 1,
+      "characterTypeId": 0,
+      "positionX": 0,
+      "positionY": 0,
+      "hp": 100,
+      "maxHp": 100,
+      "attack": 10,
+      "defense": 5,
+      "capturePoints": 0,
+      "hasTeleport": false,
+      "hasCamp": false,
+      "isAlive": true
+    },
+    {
+      "id": "unit_0_2",
+      "name": "Character 2",
+      "ownerId": "player_0",
+      "unitNumber": 2,
+      "characterTypeId": 0,
+      "positionX": 0,
+      "positionY": 0,
+      "hp": 100,
+      "maxHp": 100,
+      "attack": 10,
+      "defense": 5,
+      "capturePoints": 0,
+      "hasTeleport": false,
+      "hasCamp": false,
+      "isAlive": true
+    },
+    {
+      "id": "unit_0_3",
+      "name": "Character 3",
+      "ownerId": "player_0",
+      "unitNumber": 3,
+      "characterTypeId": 0,
+      "positionX": 0,
+      "positionY": 0,
+      "hp": 100,
+      "maxHp": 100,
+      "attack": 10,
+      "defense": 5,
+      "capturePoints": 0,
+      "hasTeleport": false,
+      "hasCamp": false,
+      "isAlive": true
+    },
+    {
+      "id": "unit_0_4",
+      "name": "Character 4",
+      "ownerId": "player_0",
+      "unitNumber": 4,
+      "characterTypeId": 0,
+      "positionX": 0,
+      "positionY": 0,
+      "hp": 100,
+      "maxHp": 100,
+      "attack": 10,
+      "defense": 5,
+      "capturePoints": 0,
+      "hasTeleport": false,
+      "hasCamp": false,
+      "isAlive": true
+    }
+  ],
+  "players": [
+    {
+      "id": "player_0",
+      "userId": "e89b8faa-4d02-44e3-a95a-5a2162923035",
+      "color": "",
+      "seat": 0,
+      "dices": [],
+      "draws": {},
+      "territoryCaptured": 0,
+      "territoryPermanent": 0,
+      "isWinner": false
+    }
+  ],
+  "unitItems": [],
+  "playerStorages": [
+    {
+      "id": "storage_1",
+      "gamePlayerId": "player_0",
+      "resourceType": "tree",
+      "quantity": 3
+    },
+    {
+      "id": "storage_2",
+      "gamePlayerId": "player_0",
+      "resourceType": "joker_red",
+      "quantity": 1
+    },
+    {
+      "id": "storage_3",
+      "gamePlayerId": "player_0",
+      "resourceType": "heal",
+      "quantity": 0
+    },
+    {
+      "id": "storage_4",
+      "gamePlayerId": "player_0",
+      "resourceType": "joker_black",
+      "quantity": 1
+    },
+    {
+      "id": "storage_5",
+      "gamePlayerId": "player_0",
+      "resourceType": "buff_debuff",
+      "quantity": 4
+    },
+    {
+      "id": "storage_6",
+      "gamePlayerId": "player_0",
+      "resourceType": "provocation",
+      "quantity": 1
+    },
+    {
+      "id": "storage_7",
+      "gamePlayerId": "player_0",
+      "resourceType": "ego_strike",
+      "quantity": 1
+    },
+    {
+      "id": "storage_8",
+      "gamePlayerId": "player_1",
+      "resourceType": "tree",
+      "quantity": 0
+    },
+    {
+      "id": "storage_9",
+      "gamePlayerId": "player_1",
+      "resourceType": "joker_red",
+      "quantity": 0
+    },
+    {
+      "id": "storage_10",
+      "gamePlayerId": "player_1",
+      "resourceType": "heal",
+      "quantity": 0
+    },
+    {
+      "id": "storage_11",
+      "gamePlayerId": "player_1",
+      "resourceType": "joker_black",
+      "quantity": 0
+    },
+    {
+      "id": "storage_12",
+      "gamePlayerId": "player_1",
+      "resourceType": "buff_debuff",
+      "quantity": 0
+    },
+    {
+      "id": "storage_13",
+      "gamePlayerId": "player_1",
+      "resourceType": "provocation",
+      "quantity": 0
+    },
+    {
+      "id": "storage_14",
+      "gamePlayerId": "player_1",
+      "resourceType": "ego_strike",
+      "quantity": 0
+    }
+  ]
+}
