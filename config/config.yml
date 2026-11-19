@@ -1,0 +1,13 @@
+host: "localhost:8080"
+
+database:
+  postgres:
+    url: "postgres://ca_user:ca_password@localhost:5432/chess-adventures-db"
+
+  redis:
+
+jwt:
+  access_secret: "TPY0FKSALo6Y/KLhEn/SO8hoc0p7fRS+svT8niBAvFQ="
+  refresh_secret: "O6knY/reoUoF7WKx9wHkczC0Qf2HfMJAlANvyyK8wHQ="
+  access_ttl: "15m"
+  refresh_ttl: "168h"  # 7 дней
